@@ -23,7 +23,7 @@ Command: nmap -sV -p 3000 localhost.
 
 Findings: Port 3000 was identified as open, running a Node.js/Express framework.
 
-Proof of Concept:https://github.com/tabassumzari/Bounty-Hunt-101-Bootcamp/blob/7f6c7e59e84e5a7b5c4349e3306ec6c737e502a7/Reconnaissance%20Nmap.png
+Proof of Concept:![image alt](https://github.com/tabassumzari/Bounty-Hunt-101-Bootcamp/blob/7f6c7e59e84e5a7b5c4349e3306ec6c737e502a7/Reconnaissance%20Nmap.png)
 
 🛠️ Phase 2: Vulnerability Research & Exploitation
 1. Cross-Site Scripting (XSS)
@@ -35,8 +35,8 @@ Payload: <iframe src="javascript:alert('xss')">.
 
 Description: The search parameter q is reflected in the DOM without proper sanitization, allowing for arbitrary JavaScript execution.
 
-Proof of Concept:https://github.com/tabassumzari/Bounty-Hunt-101-Bootcamp/blob/7f6c7e59e84e5a7b5c4349e3306ec6c737e502a7/xss1.png
-                 https://github.com/tabassumzari/Bounty-Hunt-101-Bootcamp/blob/7f6c7e59e84e5a7b5c4349e3306ec6c737e502a7/xss2.png
+Proof of Concept:![image alt](https://github.com/tabassumzari/Bounty-Hunt-101-Bootcamp/blob/7f6c7e59e84e5a7b5c4349e3306ec6c737e502a7/xss1.png)
+                 ![image alt](https://github.com/tabassumzari/Bounty-Hunt-101-Bootcamp/blob/7f6c7e59e84e5a7b5c4349e3306ec6c737e502a7/xss2.png)
 
 2. SQL Injection (SQLi)
 Vulnerability Type: Authentication Bypass.
@@ -49,8 +49,8 @@ Description: By injecting a logic bypass into the email field, the backend datab
 
 Impact: Gained complete Administrative access to the application.
 
-Proof of Concept:https://github.com/tabassumzari/Bounty-Hunt-101-Bootcamp/blob/7f6c7e59e84e5a7b5c4349e3306ec6c737e502a7/SQL%20Injection1.png
-                 https://github.com/tabassumzari/Bounty-Hunt-101-Bootcamp/blob/7f6c7e59e84e5a7b5c4349e3306ec6c737e502a7/SQL%20Injection2.png
+Proof of Concept:![image alt](https://github.com/tabassumzari/Bounty-Hunt-101-Bootcamp/blob/7f6c7e59e84e5a7b5c4349e3306ec6c737e502a7/SQL%20Injection1.png)
+                 ![image alt](https://github.com/tabassumzari/Bounty-Hunt-101-Bootcamp/blob/7f6c7e59e84e5a7b5c4349e3306ec6c737e502a7/SQL%20Injection2.png)
 
 3. Insecure Direct Object Reference (IDOR)
 Vulnerability Type: Broken Access Control.
@@ -61,10 +61,10 @@ Method: I intercepted the request for Basket ID #6 and manually modified the "Di
 
 Description: The application fails to verify if the currently logged-in user has authorization to access the requested resource ID.
 
-Proof of Concept:https://github.com/tabassumzari/Bounty-Hunt-101-Bootcamp/blob/7f6c7e59e84e5a7b5c4349e3306ec6c737e502a7/Juiceshop.png
-                https://github.com/tabassumzari/Bounty-Hunt-101-Bootcamp/blob/7f6c7e59e84e5a7b5c4349e3306ec6c737e502a7/Actual%20Order%20History.png
-                https://github.com/tabassumzari/Bounty-Hunt-101-Bootcamp/blob/7f6c7e59e84e5a7b5c4349e3306ec6c737e502a7/Burpe%20suite-IDOR.png
-                https://github.com/tabassumzari/Bounty-Hunt-101-Bootcamp/blob/7f6c7e59e84e5a7b5c4349e3306ec6c737e502a7/Repeater%206%20to%204.png
+Proof of Concept:![image alt](https://github.com/tabassumzari/Bounty-Hunt-101-Bootcamp/blob/7f6c7e59e84e5a7b5c4349e3306ec6c737e502a7/Juiceshop.png)
+                ![image alt](https://github.com/tabassumzari/Bounty-Hunt-101-Bootcamp/blob/7f6c7e59e84e5a7b5c4349e3306ec6c737e502a7/Actual%20Order%20History.png)
+                ![image alt](https://github.com/tabassumzari/Bounty-Hunt-101-Bootcamp/blob/7f6c7e59e84e5a7b5c4349e3306ec6c737e502a7/Burpe%20suite-IDOR.png)
+                ![image alt](https://github.com/tabassumzari/Bounty-Hunt-101-Bootcamp/blob/7f6c7e59e84e5a7b5c4349e3306ec6c737e502a7/Repeater%206%20to%204.png)
 
 🏁 Phase 3: Final Achievements
 The project was successfully completed with the following results:
